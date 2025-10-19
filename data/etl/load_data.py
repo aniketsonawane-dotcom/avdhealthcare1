@@ -40,7 +40,7 @@ def log_event(event_type, message, table = None):
         'message' : message,
         'table' : table
     }
-log_entries.append(log_entry)
+    log_entries.append(log_entry)
 
 def save_logs_to_gcs():
     log_file_name = f"pipeline_log_{datetime.datetime.now().isoformat('%Y%M%d%H%m%s')}.json"
