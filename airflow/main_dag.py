@@ -15,7 +15,7 @@ ARGS = {
 
 # Define the parent DAG
 with DAG(
-    dag_id="parent_dag",
+    dag_id="parent_dag1",
     schedule_interval="0 5 * * *",
     description="Parent DAG to trigger PySpark and BigQuery DAGs",
     default_args=ARGS,

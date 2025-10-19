@@ -31,7 +31,7 @@ ARGS = {
 
 # Define the DAG
 with DAG(
-    dag_id="bigquery_dag",
+    dag_id="bigquery_dag1",
     schedule_interval=None,
     description="DAG to run the bigquery jobs",
     default_args=ARGS,
